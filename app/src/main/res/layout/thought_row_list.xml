@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#520473"
+        android:backgroundTint="#56A7B2"
+        android:padding="8dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:background="#F92BC9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/rowusername"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ussername"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rowsharebuton"
+                android:src="@android:drawable/ic_menu_share"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewthoughtrow"
+                android:layout_width="400dp"
+                android:layout_height="260dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/after_cookie" />
+
+            <TextView
+                android:id="@+id/tittleTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Tittle"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/thought_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Tittle"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Tittle"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
